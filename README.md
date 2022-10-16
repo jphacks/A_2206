@@ -3,7 +3,7 @@
 [![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2022/08/JPHACKS2022_ogp.jpg)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
 
 ## 製品概要
-_「 健康 × Tech 」_  
+**「 健康 × Tech 」**  
 運動不足のそこのあなた！ダイエットが長続きしないそこの君！ゲーム感覚で、日常にヨガを取り入れてみませんか？  
 コロナウイルスによる外出自粛、デスクワーク等で運動量が減っているものの、筋トレやランニングは続かない。  
 とはいえ他のスポーツをやるには時間やモチベーションが足りない。  
