@@ -1,7 +1,7 @@
 import Title from './Title';
-import "./App.css";
+import "./TopPage.css";
 
-function App() {
+function TopPage() {
   return (
     <div>
       <Title/>
@@ -10,12 +10,10 @@ function App() {
           <button id = "button2">会員登録</button>
         </div>
    </div>
-
-    
+   
   )
-
   
 
   
   }
-export default App;
+export default TopPage;
