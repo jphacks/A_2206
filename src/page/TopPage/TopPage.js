@@ -1,5 +1,6 @@
 import React from "react";
 import backgroundImage from "./background.jpg"
+import { Link } from "react-router-dom";
 
 const backgroundStyle = {
   backgroundImage: `url(${backgroundImage})`,
@@ -66,8 +67,8 @@ function TopPage() {
     <div className='top-page' style={backgroundStyle}>
       <Title />
       <div className="top-buttons">
-        <button className="login-button" style={loginButton}>ログイン</button>
-        <button className="register-button" style={registerButton}>会員登録</button>
+        <Link to={`/login/`}><button className="login-button" style={loginButton}>ログイン</button></Link>
+        <Link to={`/register/`}><button className="register-button" style={registerButton}>会員登録</button></Link>
       </div>
     </div>
   )
