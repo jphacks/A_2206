@@ -1,16 +1,13 @@
-import Title from "../TopPage/Title";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function LoginPage(){
-    return(
-        <div>
-            <Title id = "title">Login Page</Title>
-            
-
-
-
-        </div>
-
-
+export default function LoginPage() {
+    return (
+        <>
+            <h1>LoginPage</h1>
+            <div>
+                <Link to={'/home/'}>Homeへ</Link>
+            </div>
+        </>
     )
-
 }
