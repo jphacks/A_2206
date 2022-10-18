@@ -1,0 +1,59 @@
+.buttons1 {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 5vw;
+}
+
+.buttons2 {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.stages {
+	background: #dee4f4;
+	height:100vh;
+	padding-top: 30px;
+;
+}
+
+.topleft {
+	width: 20vw;
+	height: 20vw;
+	background: #a7e2e1;
+	border-radius: 10px;
+}
+
+.topcenter {
+	width: 20vw;
+	height: 20vw;
+	background: #42c0a6;
+	border-radius: 10px;
+}
+
+.topright {
+	width: 20vw;
+	height: 20vw;
+	background: #B83D77;
+	border-radius: 10px;
+}
+
+.bottomleft {
+	width: 20vw;
+	height: 20vw;
+	background: #777528;
+	border-radius: 10px;
+}
+
+.bottomcenter {
+	width: 20vw;
+	height: 20vw;
+	background: #D98CC6;
+	border-radius: 10px;
+}
+
+.bottomright {
+	width: 20vw;
+	height: 20vw;
+	background: #78286F;
+	border-radius: 10px;
+}
