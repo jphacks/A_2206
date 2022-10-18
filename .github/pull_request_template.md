@@ -8,7 +8,9 @@
 -[] 
 
 # レビューの方法
-1.
-2.
+git fetch origin pull/{id}/head:request{id}
+git checkout request{id}
+npm i
+npm start or yarn start
 
 Close #
