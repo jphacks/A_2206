@@ -54,6 +54,7 @@ AIによる〜
 #### フレームワーク・ライブラリ・モジュール
 * git-flow
 * react.js
+* TensorFlow.js
 
 #### デバイス
 * 
