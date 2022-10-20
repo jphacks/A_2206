@@ -1,31 +1,40 @@
 import { Link } from "react-router-dom";
+import styles from "./RulePage.module.css";
 
 export default function RulePage() {
     return (
-        <div id="rule-page" style={backgroundStyle}>
-            <div id="title" style={titleStyle}>
-                ルール説明
-            </div>
+        <div className={styles.rules}>
+            <h1 className={styles.title}>⚠️ゲーム中の注意⚠️</h1>
 
-            <div id="explain" style={explainStyle}>
-                <div>画面に全身が映る位置で行ってください。</div>
-                <div>ポーズを無理にとろうとしないでください。</div>
-                <div>動きやすくリラックスできる服装で行なってください。</div>
-                <p></p>
-                <div>* 心と体に優しくヨガを楽しみましょう</div>
-                <p></p>
+            <ul className={styles.explains}>
+                <li className={styles.explain1}>
+                    画面に全身が映る位置で行ってください。
+                </li>
+
+                <li className={styles.explain2}>
+                    ポーズを無理にとろうとしないでください。
+                </li>
+
+                <li className={styles.explain3}>
+                    動きやすくリラックスできる服装で行なってください。
+                </li>
+            </ul>
+
+            <div className={styles.messages}>
+                心と体に優しくヨガを楽しみましょう!
             </div>
+            <p></p>
 
             <Link to={`/stage/`}>
-                <button className="toStage-button" style={toStageButton}>
-                    ステージ選択へ
-                </button>
+                <div className={styles.button}>
+                    <a href="#">Click!</a>
+                </div>
             </Link>
         </div>
     );
 }
 
-const titleStyle = {
+/*const titleStyle = {
     textalign: "center",
     padding: "20px 0",
     fontSize: "80px",
@@ -53,4 +62,4 @@ const backgroundStyle = {
 
 const explainStyle = {
     fontSize: "40px",
-};
+};*/
