@@ -1,0 +1,44 @@
+.top-title{
+    position: absolute;
+    left: 1%;
+    top: 19%;
+    padding-right: 2.5%;
+    width: auto;
+    height: auto;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 96px;
+    backdrop-filter: blur(5px);
+}
+
+.bg{
+    position: relative;
+    height: 100vh;
+    /* background-image: url(./nakata.jpg); */
+    background-image: url(./nakata2.jpg);
+    /* background-image: url(./background.jpg); */
+    /* background-image: url(./sunset-yoga.jpg); */
+    background-position: center;
+    background-repeat: noRepeat;
+    background-size: cover;
+}
+
+.login-btn{
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 7.5%;
+    top: 10%;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000000;
+}
+
+.top-nav-bar{
+
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
