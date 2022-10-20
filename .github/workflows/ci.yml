@@ -1,0 +1,16 @@
+name: CI
+on:
+  pull_request:
+    branches: [develop] #develop向けのプルリクが作成されたときにジョブを実行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2 #チェックアウトするアクション
+      - name: Use NodeJS
+        uses: actions/setup-node@v1 #特定バージョンのnodeを設定するアクション
+        with:
+          node-version: "12.x"
+      - run: npm ci #dependencyのインストール
+      - run: npm run fmt #コードフォーマットチェック
