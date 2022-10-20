@@ -22,7 +22,7 @@ jobs:
       - run: npm install -g surge #surgeのインストール
       - name: Deploy to Staging #ステージングデプロイを行うステップ
         if: github.event_name == 'push' #pushイベントのときだけ実行
-        run: npx surge --project ./build --domain awesome-quiet.surge.sh #デプロイ
+        run: npx surge --project ./build --domain uneven-spiders.surge.sh #デプロイ
         env: #surgeの認証
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }} #surge whoamiで取得
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }} #surge tokenで取得
