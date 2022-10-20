@@ -19,7 +19,8 @@
 .stages {
     background: rgb(226, 224, 224);
     height: 100vh;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .topleft {

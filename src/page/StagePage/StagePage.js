@@ -38,10 +38,6 @@ export default function StagePage() {
                         text={"Morning"}
                     />
                 </div>
-
-                <Link className={styles.button} to={`/game/`}>
-                    ゲーム画面へ
-                </Link>
             </div>
         </>
     );
