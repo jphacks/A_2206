@@ -1,4 +1,4 @@
-.top-title{
+.top-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -14,13 +14,13 @@
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-.bg{
+.bg {
     position: relative;
     height: 100vh;
     width: 100vw;
 }
 
-.border-back{
+.border-back {
     position: absolute;
     left: 5.47%;
     right: 2.89%;
@@ -29,7 +29,7 @@
     border: 1px solid #000000;
 }
 
-.border-top{
+.border-top {
     position: absolute;
     left: 2.42%;
     right: 4.92%;
@@ -38,7 +38,7 @@
     border: 3px solid #000000;
 }
 
-.warrior-pose{
+.warrior-pose {
     position: absolute;
     height: 50%;
     width: 30%;
@@ -49,7 +49,7 @@
     background-repeat: no-repeat;
 }
 
-.tree-pose{
+.tree-pose {
     position: absolute;
     height: 65%;
     width: 35%;
@@ -60,7 +60,7 @@
     background-repeat: no-repeat;
 }
 
-.log-io-btn{
+.log-io-btn {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -68,14 +68,14 @@
     height: auto;
     right: 5%;
     top: 10%;
-    padding: .25% 1%;
+    padding: 0.25% 1%;
     font-size: 35px;
     cursor: pointer;
     color: #000000;
     border-bottom: 2px solid;
 }
 
-.my-page-btn{
+.my-page-btn {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -83,7 +83,7 @@
     height: auto;
     right: 5%;
     top: 10%;
-    padding: .25% 1%;
+    padding: 0.25% 1%;
     font-size: 35px;
     cursor: pointer;
     color: #000000;
@@ -91,7 +91,7 @@
     border-bottom: 2px solid;
 }
 
-.start-yoga-btn{
+.start-yoga-btn {
     position: absolute;
     top: 50%;
     left: 15%;
@@ -101,4 +101,3 @@
     text-decoration: none;
     font-size: 600%;
 }
-
