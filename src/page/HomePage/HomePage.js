@@ -11,13 +11,13 @@ function HomePage() {
                     <Link className={styles["nav-item"]} to={"/"}>TOP</Link>
                     <Link className={styles["nav-item"]} to={"/course/"}>YOGA START</Link>
                     <Link className={styles["nav-item"]} to={"/goal/"}>LOG OUT</Link>
+                    {/* <LogOutButton /> */}
                 </div>
             </div>
             <div className={styles["xx"]}>
                 <Goal />
                 <UserInfo />
             </div>
-            {/* <LogOutButton /> */}
         </div>
     );
 }
@@ -25,7 +25,10 @@ function HomePage() {
 function Goal() {
     return(
         <div className={styles["goal"]}>
-            <h2>目標</h2>
+            <h1>目標</h1>
+            <div className={styles["goal-bg"]}>
+                <p className={styles["goal-sentence"]}>毎日15分ヨガを続ける</p>
+            </div>
         </div>
 
     );

@@ -3,16 +3,16 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
 }
 
 .nav-bar{
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 25%;
+    width: 25vw;
     height: 100vh;
-    background-color: #A2A4A8;
+    background-color: #a2a4a8;
 }
 
 .nav-items{
@@ -35,7 +35,7 @@
     position: absolute;
     top: 0;
     left: 25%;
-    width: 75%;
+    width: 75vw;
 }
 
 .goal{
@@ -45,18 +45,39 @@
 
 }
 
+.goal-bg{
+    position: absolute;
+    top: 7.5vh;
+    left: 0;
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a2a4a8;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.goal-sentence{
+    position: inherit;
+    margin: 25vh 0; 
+    font-size: 32px;
+}
+
 .user-info{
     position: absolute;
     top: 10vh;
-    right: 7.5vw;
+    right: 8vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .user-icon{
-    width: 22.5vh;
-    height: 22.5vh;
-    margin-bottom: 2.5vw;
-    border: 1px solid #000000;
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    margin-bottom: 3vh;
 }
