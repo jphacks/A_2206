@@ -61,6 +61,7 @@
 }
 
 .button a {
+    text-decoration: none;
     width: 30vw;
     height: 5vw;
     border: 2px solid #000;
@@ -73,7 +74,8 @@
     justify-content: space-evenly;
     color: #000;
     font-size: 130%;
-    font-family: monospace;
+    font-weight: 200;
+    text-shadow: 3px 3px 2px #000000;
 
     -webkit-transition: all 0.3s;
     transition: all 0.3s;

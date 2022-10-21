@@ -118,7 +118,7 @@ export default function GamePage() {
                     }}
                 />
                 <Link to={`/result/`}>
-                    <button className={styles.button}>Click!</button>
+                    <button className={styles.button}>CLICK</button>
                 </Link>
             </header>
         </div>

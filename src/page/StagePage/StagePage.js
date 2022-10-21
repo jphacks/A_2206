@@ -25,7 +25,7 @@ export default function StagePage() {
                     }}
                     className={styles.backarrow}
                 />
-                <h1 className={styles.title}>ステージ選択</h1>
+                <h1 className={styles.title}>STAGE SELECTION</h1>
                 <br />
                 <div className={styles.buttons1}>
                     <StageButton className={styles.topleft} text={"morning"} />
