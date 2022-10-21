@@ -54,9 +54,6 @@ function StartYoga() {
         <Link className={styles["start-yoga-btn"]} to={"/stage/"}>
             YOGA&nbsp;START
         </Link>
-    return(
-        <Link className={styles["start-yoga-btn"]} to={"/stage/"}>YOGA START!</Link>
-
     );
 }
 

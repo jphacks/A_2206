@@ -5,21 +5,20 @@ import achieve from "./achieve.jpeg";
 
 export default HomePage;
 function HomePage() {
-    return (
+    return (    
         <div className={styles["bg"]}>
             <div className={styles["nav-bar"]}>
                 <div className={styles["nav-items"]}>
                     <Link className={styles["nav-item"]} to={"/"}>TOP</Link>
-                    <Link className={styles["nav-item"]} to={"/goal/"}>LOG OUT</Link>
-                    {/* <LogOutButton /> */}
+                    <LogOutButton />
                 </div>
             </div>
-            <div className={styles["my-page-main"]}>
-                <Goal />
-                <Achievement />
-                <UserInfo />
-            </div>
+        <div className={styles["my-page-main"]}>
+            <Goal />
+            <Achievement />
+            <UserInfo />
         </div>
+    </div>
     );
 }
 
@@ -55,8 +54,8 @@ function UserInfo() {
     );
 }
 
-// function LogOutButton() {
-//     return (
-//         <link to="../top/" onClick={() => auth.signOut(auth)}>Logout</link>
-//     );
-// }
+function LogOutButton() {
+    return (
+        <Link className={styles["nav-item"]} to={"/"} onClick={() => auth.signOut(auth)}>LOG OUT</Link>
+    );
+}
