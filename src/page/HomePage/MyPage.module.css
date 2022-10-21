@@ -1,0 +1,15 @@
+.bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #D9D9D9;
+}
+
+.nav-bar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25%;
+    height: 100vh;
+    background-color: #A2A4A8;
+}

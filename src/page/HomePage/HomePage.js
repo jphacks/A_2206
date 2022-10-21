@@ -1,18 +1,19 @@
 import { auth } from "../../firebase";
 import { Link } from "react-router-dom";
+import styles from "./MyPage.module.css";
 
 export default HomePage;
 function HomePage() {
     return (
-        <div>
+        <div className={styles["bg"]}>
             <>
-                <h1>HomePage</h1>
-                <UserInfo />
-                <div>
+                <div className={styles["nav-bar"]}>
                     <Link to={"/"}>Top</Link>
                     <Link to={"/goal/"}>目標設定画面へ</Link>
                     <Link to={"/course/"}>コース選択画面へ</Link>
                 </div>
+                <h1>My Page</h1>
+                <UserInfo />
                 {/* <LogOutButton /> */}
             </>
         </div>
