@@ -51,7 +51,7 @@
 
 .tree-pose {
     position: absolute;
-    height: 65%;
+    height: 75%;
     width: 35%;
     left: 65%;
     top: 35.5%;
@@ -73,31 +73,97 @@
     cursor: pointer;
     color: #000000;
     border-bottom: 2px solid;
+    font-weight: 300;
 }
 
 .my-page-btn {
+    font-weight: 100;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     position: absolute;
     width: auto;
     height: auto;
-    right: 5%;
     top: 10%;
+    right: 5%;
+    color: #000;
+    font-size: 300%;
     padding: 0.25% 1%;
     font-size: 35px;
     cursor: pointer;
     color: #000000;
     text-decoration: none;
-    border-bottom: 2px solid;
+    border-radius: 0;
+    font-weight: 200;
+}
+
+
+.my-page-btn:before,
+.my-page-btn:after {
+.start-yoga-btn {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #000;
+}
+
+.my-page-btn:before {
+    top: 0;
+    left: 0;
+}
+
+.my-page-btn:after {
+    right: 0;
+    bottom: 0;
+}
+
+.my-page-btn:hover::before,
+.my-page-btn:hover:after {
+    width: 0;
 }
 
 .start-yoga-btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 15%;
     width: 50%;
     display: flex;
-    color: #000000;
-    text-decoration: none;
-    font-size: 600%;
+    font-weight: 100;
+    color: #000;
+    text-shadow: 3px 3px 2px #000000;
+    font-size: 800%;
+
+    border-radius: 0;
+}
+
+
+.start-yoga-btn:before,
+.start-yoga-btn:after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #000;
+}
+
+.start-yoga-btn:before {
+    top: 0;
+    left: 0;
+}
+
+.start-yoga-btn:after {
+    right: 0;
+    bottom: 0;
+}
+
+.start-yoga-btn:hover::before,
+.start-yoga-btn:hover:after {
+    width: 0;
 }
