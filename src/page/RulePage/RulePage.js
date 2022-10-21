@@ -27,7 +27,7 @@ export default function RulePage() {
             <p></p>
 
             <div className={styles.button}>
-                <Link to={`/stage/`}>
+                <Link to={`/game/`}>
                     <a href="#" className="btn btn-border">
                         Click!
                     </a>
