@@ -93,3 +93,11 @@
     transform: translateY(-50%);
 }
 */
+
+.backarrow {
+    cursor: pointer;
+    width: 4vw;
+    position: absolute;
+    top: 5vw;
+    left: 2vw;
+}

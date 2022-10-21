@@ -68,8 +68,8 @@
 
 .backarrow {
     cursor: pointer;
-    width: 5vw;
-    position: relative; 
-    top: 6vw;
+    width: 4vw;
+    position: absolute;
+    top: 3vw;
     left: 10vw;
 }

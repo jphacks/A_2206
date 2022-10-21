@@ -18,9 +18,15 @@ export default function StagePage() {
     return (
         <>
             <div className={styles.stages}>
-                <img src={backarrow} onClick={() => {navigate(-1)}} className={styles.backarrow}/>
+                <img
+                    src={backarrow}
+                    onClick={() => {
+                        navigate(-1);
+                    }}
+                    className={styles.backarrow}
+                />
                 <h1 className={styles.title}>ステージ選択</h1>
-                <br/>
+                <br />
                 <div className={styles.buttons1}>
                     <StageButton className={styles.topleft} text={"morning"} />
                     <StageButton className={styles.topcenter} text={"noon"} />
