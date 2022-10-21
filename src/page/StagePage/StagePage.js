@@ -6,7 +6,6 @@ const StageButton = ({ className, text }) => {
         <Link to={"/game/"}>
             <button className={`${className} ${styles.buttonparent}`}>
                 {text}
-                {Image}
             </button>
         </Link>
     );
