@@ -27,7 +27,7 @@
 
 .messages {
     line-height: 3em;
-    font-size: 150%;
+    font-size: 170%;
     display: flex;
     justify-content: center;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -72,7 +72,7 @@
     display: flex;
     justify-content: space-evenly;
     color: #000;
-    font-size: 120%;
+    font-size: 130%;
     font-family: monospace;
 
     -webkit-transition: all 0.3s;

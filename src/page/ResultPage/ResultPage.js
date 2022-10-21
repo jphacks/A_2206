@@ -3,13 +3,17 @@ import styles from "./ResultPage.module.css";
 
 export default function ResultPage() {
     return (
-        <>
-            <div className={styles.title}>YAGA終了！</div>
-            <div className={styles.message}>お疲れ様でした！</div>
+        <div className={styles.Result}>
+            <div className={styles.title}>WELL DONE!!</div>
+            <div className={styles.message}>Thank you for playing</div>
 
-            <Link to={"/home/"}>
-                <button>ログイン</button>
-            </Link>
-        </>
+            <div className={styles.button}>
+                <Link to={`/`}>
+                    <a href="#" className="btn btn-border">
+                        Click!
+                    </a>
+                </Link>
+            </div>
+        </div>
     );
 }
