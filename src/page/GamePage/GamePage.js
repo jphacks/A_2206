@@ -89,7 +89,6 @@ export default function GamePage() {
                 <Webcam
                     ref={webcamRef}
                     muted={true}
-                    mirrored={true}
                     style={{
                         position: "absolute",
                         marginLeft: "auto",
