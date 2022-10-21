@@ -65,3 +65,11 @@
     font-size: 60px;
     font-family: cursive;
 }
+
+.backarrow {
+    cursor: pointer;
+    width: 5vw;
+    position: relative; 
+    top: 6vw;
+    left: 10vw;
+}
