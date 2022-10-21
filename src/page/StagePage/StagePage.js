@@ -3,7 +3,7 @@ import styles from "./StagePage.module.css";
 
 const StageButton = ({ className, text }) => {
     return (
-        <Link to={"/game/"}>
+        <Link to={"/rule/"}>
             <button className={`${className} ${styles.buttonparent}`}>
                 {text}
             </button>
