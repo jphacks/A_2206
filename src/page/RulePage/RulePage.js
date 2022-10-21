@@ -17,7 +17,7 @@ export default function RulePage() {
                 </li>
                 <p></p>
                 <li className={styles.explain1}>
-                    動きやすくリラックスできる服装で行なってください。
+                    動きやすくリラックスできる服装で行ってください。
                 </li>
             </ul>
 
