@@ -6,28 +6,36 @@ export default HomePage;
 function HomePage() {
     return (
         <div className={styles["bg"]}>
-            <>
-                <div className={styles["nav-bar"]}>
-                    <Link to={"/"}>Top</Link>
-                    <Link to={"/goal/"}>目標設定画面へ</Link>
-                    <Link to={"/course/"}>コース選択画面へ</Link>
+            <div className={styles["nav-bar"]}>
+                <div className={styles["nav-items"]}>
+                    <Link className={styles["nav-item"]} to={"/"}>TOP</Link>
+                    <Link className={styles["nav-item"]} to={"/course/"}>YOGA START</Link>
+                    <Link className={styles["nav-item"]} to={"/goal/"}>LOG OUT</Link>
                 </div>
-                <h1>My Page</h1>
+            </div>
+            <div className={styles["xx"]}>
+                <Goal />
                 <UserInfo />
-                {/* <LogOutButton /> */}
-            </>
+            </div>
+            {/* <LogOutButton /> */}
         </div>
     );
 }
 
-function UserInfo() {
-    return (
-        <div className="userInfo">
-            <img
-                src={auth.currentUser.photoURL}
-                alt="googleアカウントのプロフィール画像"
-            />
-            <h3>{auth.currentUser.displayName}</h3>
+function Goal() {
+    return(
+        <div className={styles["goal"]}>
+            <h2>目標</h2>
+        </div>
+
+    );
+}
+
+    function UserInfo() {
+        return(
+        <div className={styles["user-info"]}>
+            <img className={styles["user-icon"]} src={auth.currentUser.photoURL} alt="ユーザーのアイコン" />
+            <h2>{auth.currentUser.displayName}</h2>
         </div>
     );
 }
