@@ -51,7 +51,7 @@ function Title() {
 
 function StartYoga() {
     return(
-        <Link className={styles["start-yoga-btn"]} to={"/rule/"}>YOGA START!</Link>
+        <Link className={styles["start-yoga-btn"]} to={"/stage/"}>YOGA START!</Link>
     );
 }
 
