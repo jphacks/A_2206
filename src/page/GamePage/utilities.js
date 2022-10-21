@@ -34,6 +34,10 @@ export const drawRect = (
                     " - " +
                     Math.round(scores[i] * 100) / 100,
                 x * imgWidth,
+                y * imgHeight - 10
+            );
+            ctx.rect(
+                x * imgWidth,
                 y * imgHeight,
                 (width * imgWidth) / 2,
                 (height * imgHeight) / 1.5

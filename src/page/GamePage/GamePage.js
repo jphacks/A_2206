@@ -1,10 +1,12 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import * as tf from "@tensorflow/tfjs";
 // TODO1 - import required model here
 // e.g.
 import Webcam from "react-webcam";
 // TODO2 - import drawing utility here
-import {drawRect} from "./utilities"; 
+import { drawRect } from "./utilities";
+import styles from "./GamePage.module.css";
+// import senshi from "./senshi.png";
 
 export default function GamePage() {
     const webcamRef = useRef(null);
@@ -12,7 +14,9 @@ export default function GamePage() {
 
     const runCoco = async () => {
         // 3. TODO - Load network
-        const net = await tf.loadGraphModel("url");
+        const net = await tf.loadGraphModel(
+            "https://tensorflowjsrealtimemodel.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json"
+        );
 
         setInterval(() => {
             detect(net);
@@ -80,11 +84,12 @@ export default function GamePage() {
     }, []);
 
     return (
-        <div className="App">
-            <header className="App-header">
+        <div className={styles.app}>
+            <header className={styles.header}>
                 <Webcam
                     ref={webcamRef}
                     muted={true}
+                    mirrored={true}
                     style={{
                         position: "absolute",
                         marginLeft: "auto",
