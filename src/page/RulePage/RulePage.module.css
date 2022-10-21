@@ -1,0 +1,95 @@
+.rules {
+    font-size: 200%;
+    background-color: white;
+    line-height: 250%;
+}
+
+.explains {
+    font-size: 120%;
+    justify-content: center;
+    font-family: cursive;
+}
+
+.explains1 {
+    display: flex;
+    font-family: Courier New, Courier, monospace;
+}
+
+.explains2 {
+    display: flex;
+    font-family: Courier New, Courier, monospace;
+}
+
+.explains3 {
+    display: flex;
+    font-family: Courier New, Courier, monospace;
+}
+
+.messages {
+    line-height: 3em;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    line-height: 3em;
+}
+
+.explains {
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 20px #c4c3c3; /*線の外側*/
+    border: dashed 4px black; /*破線*/
+    border-radius: 9px;
+    margin-left: 40px; /*はみ出ないように調整*/
+    margin-right: 40px; /*はみ出ないように調整*/
+    padding: 0.5em 0.5em 0.5em 2em;
+}
+
+.explains .explains1 {
+    line-height: 1.5;
+    padding: 0.5em 0;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button a {
+    width: 30vw;
+    height: 5vw;
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #fff;
+    -webkit-box-shadow: 8px 8px 0 #000;
+    box-shadow: 8px 8px 0 #000;
+
+    display: flex;
+    justify-content: space-evenly;
+    color: #000;
+    font-size: 120%;
+    font-family: monospace;
+
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button a:hover {
+    -webkit-box-shadow: -8px -8px 0 #000;
+    box-shadow: -8px -8px 0 #000;
+}
+
+/*.button a:after {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transition: 0.2s "ease-in-out";
+    font-weight: 900;
+    transform: translateY(-50%);
+}
+*/
