@@ -1,9 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./RulePage.module.css";
+import backarrow from "./backarrow.png";
 
 export default function RulePage() {
+    const navigate = useNavigate();
+
     return (
         <div className={styles.rules}>
+            <img
+                src={backarrow}
+                onClick={() => {
+                    navigate(-1);
+                }}
+                className={styles.backarrow}
+            />
+
             <h1 className={styles.title}>⚠️ゲーム中の注意⚠️</h1>
 
             <ul className={styles.explains}>

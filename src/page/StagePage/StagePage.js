@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./StagePage.module.css";
+import backarrow from "./backarrow.png";
 
 const StageButton = ({ className, text }) => {
     return (
@@ -12,11 +13,20 @@ const StageButton = ({ className, text }) => {
 };
 
 export default function StagePage() {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className={styles.stages}>
+                <img
+                    src={backarrow}
+                    onClick={() => {
+                        navigate(-1);
+                    }}
+                    className={styles.backarrow}
+                />
                 <h1 className={styles.title}>ステージ選択</h1>
-                <br></br>
+                <br />
                 <div className={styles.buttons1}>
                     <StageButton className={styles.topleft} text={"morning"} />
                     <StageButton className={styles.topcenter} text={"noon"} />

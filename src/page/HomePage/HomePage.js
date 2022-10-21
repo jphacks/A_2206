@@ -57,6 +57,6 @@ function UserInfo() {
 
 // function LogOutButton() {
 //     return (
-//         <link to="../top/" onClick={() => auth.signOut(auth)}>Logout</link>   
+//         <link to="../top/" onClick={() => auth.signOut(auth)}>Logout</link>
 //     );
 // }
