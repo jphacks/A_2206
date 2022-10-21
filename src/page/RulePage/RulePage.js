@@ -40,7 +40,7 @@ export default function RulePage() {
             <div className={styles.button}>
                 <Link to={`/game/`}>
                     <a href="#" className="btn btn-border">
-                        Click!
+                        CLICK
                     </a>
                 </Link>
             </div>

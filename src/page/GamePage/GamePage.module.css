@@ -3,7 +3,7 @@
 }
 
 .header {
-    background-color: #282c34;
+    background-color: #aaaeb4;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -38,17 +38,18 @@
 
 .button {
     width: 30vw;
-    height: 5vw;
+    height: 6vw;
     border: 2px solid #000;
     border-radius: 0;
     background: #fff;
     -webkit-box-shadow: 8px 8px 0 #000;
     box-shadow: 8px 8px 0 #000;
 
+    font-weight: 100;
     justify-content: space-evenly;
     color: #000;
-    font-size: 130%;
-    font-family: monospace;
+    font-size: 140%;
+    text-shadow: 3px 3px 2px #000000;
 
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -56,6 +57,9 @@
     position: absolute;
     top: 85vh;
     left: 35vw;
+
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .button:hover {

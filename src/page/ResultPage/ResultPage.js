@@ -5,7 +5,7 @@ export default function ResultPage() {
     return (
         <div className={styles.Result}>
             <div className={styles.title}>WELL DONE!!</div>
-            <div className={styles.message}>Thank you for playing</div>
+            <div className={styles.message}>THANK YOU FOR PLAYING</div>
 
             <div className={styles.button}>
                 <Link to={`/`}>
