@@ -5,29 +5,65 @@ import { auth, provider } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 
-function Title() {
-    return (
-        <div className={styles["top-title"]}>
-            <p>
-                ChillChill<br/>
-                YOGAFIRE
-                </p>
-        </div>
-    );
-}
-
 export default TopPage;
-
 function TopPage() {
     const [user] = useAuthState(auth);
 
     return (
         <div className={styles["bg"]}>
-            <Title />
-            <div>
-                {user ? <LogOutButton /> : <LogInButton />}
+            <div className={styles["border-back"]}></div>
+            <div className={styles["border-top"]}>
+                {user ? 
+                    // ログイン中の画面
+                    <>  
+                        {/* <DisplayGoal /> */}
+                        <StartYoga />
+                        <TreePose />
+                        <MyPageButton />
+                        <LogOutButton />
+                    </> : 
+                    // ログアウト中の画面
+                    <>
+                        <Title />
+                        <WarriorPose />
+                        <LogInButton />
+                    </>
+                }
             </div>
         </div>
+    );
+}
+
+function Title() {
+    return (
+        <div className={styles["top-title"]}>
+            <p>Chill Chill</p>
+            <p>YOGAFIRE</p>
+        </div>
+    );
+}
+
+// const DisplayGoal = ({ className }) => {
+//     return (
+//         <a className={className}>PUSH</a>
+//     );
+// };
+
+function StartYoga() {
+    return(
+        <Link className={styles["start-yoga-btn"]} to={"/rule/"}>YOGA START!</Link>
+    );
+}
+
+function WarriorPose() {
+    return (
+        <div className={styles["warrior-pose"]}></div>
+    );
+}
+
+function TreePose() {
+    return (
+        <div className={styles["tree-pose"]}></div>
     );
 }
 
@@ -37,22 +73,23 @@ function LogInButton() {
     };
     return (
         <>
-            <a className={styles["login-btn"]} to={"/rule/"} onClick={logInWithGoogle}>ログイン</a>
+            <a className={styles["log-io-btn"]} onClick={logInWithGoogle}>
+                Login
+                <span className={styles["btn-underline"]}></span>
+            </a>
         </>
     );
 }
 
+function MyPageButton() {
+    return (
+        <Link className={styles["my-page-btn"]} to={"/home/"}>My Page</Link>
+    );
+}
+
+
 function LogOutButton() {
     return (
-        <>
-            <div className={styles["top-nav-bar"]}>
-                <Link to={"/goal/"}>目標設定画面へ</Link>
-                <Link to={"/home/"}>ホーム</Link>
-                <Link to={"/course/"}>コース選択画面へ</Link>
-            </div>
-            <button onClick={() => auth.signOut(auth)}>
-                <p>Log Out</p>
-            </button>
-        </>
+        <a onClick={() => auth.signOut(auth)}>Logout</a>   
     );
 }

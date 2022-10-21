@@ -1,44 +1,104 @@
 .top-title{
     position: absolute;
-    left: 1%;
-    top: 19%;
-    padding-right: 2.5%;
-    width: auto;
-    height: auto;
-    font-family: Inter;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 96px;
-    backdrop-filter: blur(5px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 850%;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .bg{
     position: relative;
     height: 100vh;
-    /* background-image: url(./nakata.jpg); */
-    background-image: url(./nakata2.jpg);
-    /* background-image: url(./background.jpg); */
-    /* background-image: url(./sunset-yoga.jpg); */
-    background-position: center;
-    background-repeat: noRepeat;
-    background-size: cover;
+    width: 100vw;
 }
 
-.login-btn{
+.border-back{
+    position: absolute;
+    left: 5.47%;
+    right: 2.89%;
+    top: 7.45%;
+    bottom: 2.28%;
+    border: 1px solid #000000;
+}
+
+.border-top{
+    position: absolute;
+    left: 2.42%;
+    right: 4.92%;
+    top: 4.33%;
+    bottom: 4.69%;
+    border: 3px solid #000000;
+}
+
+.warrior-pose{
+    position: absolute;
+    height: 50%;
+    width: 30%;
+    left: 70%;
+    top: 54%;
+    background-image: url(./warrior-pose.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tree-pose{
+    position: absolute;
+    height: 65%;
+    width: 35%;
+    left: 65%;
+    top: 35.5%;
+    background-image: url(./tree-pose.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.log-io-btn{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     width: auto;
     height: auto;
-    right: 7.5%;
+    right: 5%;
     top: 10%;
-    font-size: 30px;
+    padding: .25% 1%;
+    font-size: 35px;
     cursor: pointer;
-    font-weight: bold;
     color: #000000;
+    border-bottom: 2px solid;
 }
 
-.top-nav-bar{
-
-    width: auto;
+.my-page-btn{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 5%;
+    top: 10%;
+    padding: .25% 1%;
+    font-size: 35px;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 2px solid;
 }
+
+.start-yoga-btn{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 50%;
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    font-size: 600%;
+}
+
