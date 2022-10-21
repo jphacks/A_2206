@@ -19,7 +19,6 @@ function TopPage() {
                         <StartYoga />
                         <TreePose />
                         <MyPageButton />
-                        <LogOutButton />
                     </>
                 ) : (
                     // ログアウト中の画面
@@ -85,8 +84,4 @@ function MyPageButton() {
             My Page
         </Link>
     );
-}
-
-function LogOutButton() {
-    return <a onClick={() => auth.signOut(auth)}>Logout</a>;
 }
