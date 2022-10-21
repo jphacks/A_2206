@@ -17,20 +17,22 @@ export default function RulePage() {
                 </li>
                 <p></p>
                 <li className={styles.explain1}>
-                    動きやすくリラックスできる服装で行なってください。
+                    動きやすくリラックスできる服装で行ってください。
                 </li>
             </ul>
 
             <div className={styles.messages}>
-                心と体に優しくヨガを楽しみましょう!
+                心と体に優しくYOGAを楽しみましょう !!
             </div>
             <p></p>
 
-            <Link to={`/stage/`}>
-                <div className={styles.button}>
-                    <a href="#">Click!</a>
-                </div>
-            </Link>
+            <div className={styles.button}>
+                <Link to={`/stage/`}>
+                    <a href="#" className="btn btn-border">
+                        Click!
+                    </a>
+                </Link>
+            </div>
         </div>
     );
 }
