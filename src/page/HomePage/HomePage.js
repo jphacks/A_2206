@@ -13,6 +13,7 @@ function HomePage() {
                     <Link to={"/goal/"}>目標設定画面へ</Link>
                     <Link to={"/course/"}>コース選択画面へ</Link>
                 </div>
+                {/* <LogOutButton /> */}
             </>
         </div>
     );
@@ -29,3 +30,9 @@ function UserInfo() {
         </div>
     );
 }
+
+// function LogOutButton() {
+//     return (
+//         <link to="../top/" onClick={() => auth.signOut(auth)}>Logout</link>   
+//     );
+// }
