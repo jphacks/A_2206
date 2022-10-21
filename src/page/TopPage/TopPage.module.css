@@ -1,4 +1,4 @@
-.top-title{
+.top-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -9,18 +9,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-weight: 100;
+    font-weight: 80%;
     font-size: 850%;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-.bg{
+.bg {
     position: relative;
     height: 100vh;
     width: 100vw;
 }
 
-.border-back{
+.border-back {
     position: absolute;
     left: 5.47%;
     right: 2.89%;
@@ -29,7 +29,7 @@
     border: 1px solid #000000;
 }
 
-.border-top{
+.border-top {
     position: absolute;
     left: 2.42%;
     right: 4.92%;
@@ -38,7 +38,7 @@
     border: 3px solid #000000;
 }
 
-.warrior-pose{
+.warrior-pose {
     position: absolute;
     height: 50%;
     width: 30%;
@@ -49,9 +49,9 @@
     background-repeat: no-repeat;
 }
 
-.tree-pose{
+.tree-pose {
     position: absolute;
-    height: 65%;
+    height: 75%;
     width: 35%;
     left: 65%;
     top: 35.5%;
@@ -60,7 +60,7 @@
     background-repeat: no-repeat;
 }
 
-.log-io-btn{
+.log-io-btn {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -68,14 +68,14 @@
     height: auto;
     right: 5%;
     top: 10%;
-    padding: .25% 1%;
+    padding: 0.25% 1%;
     font-size: 35px;
     cursor: pointer;
     color: #000000;
     border-bottom: 2px solid;
 }
 
-.my-page-btn{
+.my-page-btn {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -83,7 +83,7 @@
     height: auto;
     right: 5%;
     top: 10%;
-    padding: .25% 1%;
+    padding: 0.25% 1%;
     font-size: 35px;
     cursor: pointer;
     color: #000000;
@@ -91,14 +91,48 @@
     border-bottom: 2px solid;
 }
 
-.start-yoga-btn{
+.start-yoga-btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
     position: absolute;
     top: 50%;
     left: 15%;
     width: 50%;
     display: flex;
-    color: #000000;
-    text-decoration: none;
-    font-size: 600%;
+    font-weight: 100;
+    color: #000;
+    text-shadow: 1px -1px 1px #bdbdbd, -1px 2px 1px #737272,
+        -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #5a5858,
+        -5px 10px 1px #616161, -6px 12px 1px #757575, -7px 14px 1px #9e9e9e,
+        -8px 16px 1px #bdbdbd, -9px 18px 1px #e0e0e0;
+    font-size: 800%;
+
+    border-radius: 0;
 }
 
+.start-yoga-btn:before,
+.start-yoga-btn:after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #000;
+}
+
+.start-yoga-btn:before {
+    top: 0;
+    left: 0;
+}
+
+.start-yoga-btn:after {
+    right: 0;
+    bottom: 0;
+}
+
+.start-yoga-btn:hover::before,
+.start-yoga-btn:hover:after {
+    width: 0;
+}

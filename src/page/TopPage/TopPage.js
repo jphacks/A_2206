@@ -4,7 +4,6 @@ import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-
 export default TopPage;
 function TopPage() {
     const [user] = useAuthState(auth);
@@ -13,22 +12,23 @@ function TopPage() {
         <div className={styles["bg"]}>
             <div className={styles["border-back"]}></div>
             <div className={styles["border-top"]}>
-                {user ? 
+                {user ? (
                     // ログイン中の画面
-                    <>  
+                    <>
                         {/* <DisplayGoal /> */}
                         <StartYoga />
                         <TreePose />
                         <MyPageButton />
                         <LogOutButton />
-                    </> : 
+                    </>
+                ) : (
                     // ログアウト中の画面
                     <>
                         <Title />
                         <WarriorPose />
                         <LogInButton />
                     </>
-                }
+                )}
             </div>
         </div>
     );
@@ -50,21 +50,19 @@ function Title() {
 // };
 
 function StartYoga() {
-    return(
-        <Link className={styles["start-yoga-btn"]} to={"/rule/"}>YOGA START!</Link>
+    return (
+        <Link className={styles["start-yoga-btn"]} to={"/stage/"}>
+            YOGA&nbsp;START
+        </Link>
     );
 }
 
 function WarriorPose() {
-    return (
-        <div className={styles["warrior-pose"]}></div>
-    );
+    return <div className={styles["warrior-pose"]}></div>;
 }
 
 function TreePose() {
-    return (
-        <div className={styles["tree-pose"]}></div>
-    );
+    return <div className={styles["tree-pose"]}></div>;
 }
 
 function LogInButton() {
@@ -83,13 +81,12 @@ function LogInButton() {
 
 function MyPageButton() {
     return (
-        <Link className={styles["my-page-btn"]} to={"/home/"}>My Page</Link>
+        <Link className={styles["my-page-btn"]} to={"/home/"}>
+            My Page
+        </Link>
     );
 }
 
-
 function LogOutButton() {
-    return (
-        <a onClick={() => auth.signOut(auth)}>Logout</a>   
-    );
+    return <a onClick={() => auth.signOut(auth)}>Logout</a>;
 }
