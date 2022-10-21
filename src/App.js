@@ -8,6 +8,7 @@ import RulePage from "./page/RulePage/RulePage";
 import CoursePage from "./page/CoursePage/CoursePage";
 import StagePage from "./page/StagePage/StagePage";
 import GamePage from "./page/GamePage/GamePage";
+import ResultPage from "./page/ResultPage/ResultPage";
 
 export default function App() {
     return (
@@ -21,7 +22,8 @@ export default function App() {
                 <Route path={`/rule/`} element={<RulePage />} />
                 <Route path={`/course/`} element={<CoursePage />} />
                 <Route path={`/stage/`} element={<StagePage />} />
-                <Route path={`/game`} element={<GamePage />} />
+                <Route path={`/game/`} element={<GamePage />} />
+                <Route path={`/result/`} element={<ResultPage />} />
             </Routes>
         </BrowserRouter>
     );
