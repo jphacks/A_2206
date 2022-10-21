@@ -42,8 +42,6 @@ export const drawRect = (
                 (width * imgWidth) / 2,
                 (height * imgHeight) / 1.5
             );
-            ctx.scale(-1, 1);
-            ctx.translate(-width, 0);
             ctx.stroke();
         }
     }
