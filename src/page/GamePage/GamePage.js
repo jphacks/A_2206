@@ -1,4 +1,3 @@
-
 import { useRef, useEffect } from "react";
 import * as tf from "@tensorflow/tfjs";
 // TODO1 - import required model here
@@ -7,8 +6,8 @@ import Webcam from "react-webcam";
 // TODO2 - import drawing utility here
 import { drawRect } from "./utilities";
 import styles from "./GamePage.module.css";
+import { Link } from "react-router-dom";
 // import senshi from "./senshi.png";
-
 
 export default function GamePage() {
     const webcamRef = useRef(null);
@@ -86,7 +85,6 @@ export default function GamePage() {
     }, []);
 
     return (
-
         <div className={styles.app}>
             <header className={styles.header}>
                 <Webcam
@@ -119,8 +117,10 @@ export default function GamePage() {
                         height: 480,
                     }}
                 />
+                <Link to={`/result/`}>
+                    <button className={styles.button}>Click!</button>
+                </Link>
             </header>
         </div>
-
     );
 }
