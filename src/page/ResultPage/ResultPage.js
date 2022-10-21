@@ -10,7 +10,7 @@ export default function ResultPage() {
             <div className={styles.button}>
                 <Link to={`/`}>
                     <a href="#" className="btn btn-border">
-                        Click!
+                        TO HOME
                     </a>
                 </Link>
             </div>
