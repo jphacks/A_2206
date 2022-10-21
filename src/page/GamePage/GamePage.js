@@ -1,3 +1,4 @@
+
 import { useRef, useEffect } from "react";
 import * as tf from "@tensorflow/tfjs";
 // TODO1 - import required model here
@@ -7,6 +8,7 @@ import Webcam from "react-webcam";
 import { drawRect } from "./utilities";
 import styles from "./GamePage.module.css";
 // import senshi from "./senshi.png";
+
 
 export default function GamePage() {
     const webcamRef = useRef(null);
@@ -84,6 +86,7 @@ export default function GamePage() {
     }, []);
 
     return (
+
         <div className={styles.app}>
             <header className={styles.header}>
                 <Webcam
@@ -118,5 +121,6 @@ export default function GamePage() {
                 />
             </header>
         </div>
+
     );
 }
