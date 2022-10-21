@@ -1,14 +1,26 @@
 .buttonparent {
     width: 20vw;
     height: 20vw;
-    border-radius: 10px;
-    font-size: 300%;
+    font-size: 200%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    border: 100% solid #000;
+    border-radius: 0;
+    background: #fff;
+    -webkit-box-shadow: 8px 8px 0 #000;
+    box-shadow: 8px 8px 0 #000;
+}
+
+.buttonparent:hover {
+    -webkit-box-shadow: -8px -8px 0 #000;
+    box-shadow: -8px -8px 0 #000;
 }
 
 .buttons1 {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
 }
 
 .buttons2 {
@@ -17,7 +29,7 @@
 }
 
 .stages {
-    background: rgb(226, 224, 224);
+    background: white;
     height: 100vh;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -50,44 +62,6 @@
 .title {
     display: flex;
     justify-content: center;
-    font-size: 50px;
-}
-
-.button {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 60vw;
-    height: 5vw;
-
-    background: #eee;
-    border-radius: 3px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 220px;
-    padding: 10px 25px;
-    color: #313131;
-    transition: 0.3s ease-in-out;
-    font-weight: 600;
-    box-shadow: 5px 5px 0 #6bb6ff;
-    border-radius: 50px;
-    transform: translate(0px, 30px);
-    font-size: 150%;
-}
-
-.button:hover {
-    background-color: #b3d9ff;
-    box-shadow: 0 0 0;
-    transform: translate(5px, 5px);
-}
-.button:after {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transition: 0.2s "ease-in-out";
-    font-weight: 900;
-    transform: translateY(-50%);
+    font-size: 60px;
+    font-family: cursive;
 }

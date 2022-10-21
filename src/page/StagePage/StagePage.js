@@ -6,6 +6,7 @@ const StageButton = ({ className, text }) => {
         <Link to={"/game/"}>
             <button className={`${className} ${styles.buttonparent}`}>
                 {text}
+                {Image}
             </button>
         </Link>
     );
@@ -16,27 +17,23 @@ export default function StagePage() {
         <>
             <div className={styles.stages}>
                 <h1 className={styles.title}>ステージ選択</h1>
+                <br></br>
                 <div className={styles.buttons1}>
-                    <StageButton className={styles.topleft} text={"Hello"} />
-                    <StageButton
-                        className={styles.topcenter}
-                        text={"Morning"}
-                    />
-                    <StageButton className={styles.topright} text={"Noon"} />
+                    <StageButton className={styles.topleft} text={"morning"} />
+                    <StageButton className={styles.topcenter} text={"noon"} />
+                    <StageButton className={styles.topright} text={"night"} />
                 </div>
+
                 <div className={styles.buttons2}>
                     <StageButton
                         className={styles.bottomleft}
-                        text={"Morning"}
+                        text={"fat burning"}
                     />
                     <StageButton
                         className={styles.bottomcenter}
-                        text={"Morning"}
+                        text={"rerax"}
                     />
-                    <StageButton
-                        className={styles.bottomright}
-                        text={"Morning"}
-                    />
+                    <StageButton className={styles.bottomright} text={"fun"} />
                 </div>
             </div>
         </>
