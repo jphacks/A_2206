@@ -10,12 +10,13 @@ export default function RulePage() {
                 <li className={styles.explain1}>
                     画面に全身が映る位置で行ってください。
                 </li>
+                <p></p>
 
-                <li className={styles.explain2}>
+                <li className={styles.explain1}>
                     ポーズを無理にとろうとしないでください。
                 </li>
-
-                <li className={styles.explain3}>
+                <p></p>
+                <li className={styles.explain1}>
                     動きやすくリラックスできる服装で行なってください。
                 </li>
             </ul>

@@ -38,8 +38,7 @@
     justify-content: center;
 }
 
-ul,
-ol {
+.explains {
     background: #fffde8;
     box-shadow: 0px 0px 0px 10px #fffde8; /*線の外側*/
     border: dashed 2px #ffb03f; /*破線*/
@@ -49,8 +48,8 @@ ol {
     padding: 0.5em 0.5em 0.5em 2em;
 }
 
-ul li,
-ol li {
+.explains .explains1,
+.explains .explains1 {
     line-height: 1.5;
     padding: 0.5em 0;
 }
@@ -94,7 +93,6 @@ ol li {
     top: 50%;
     right: 20px;
     transition: 0.2s "ease-in-out";
-
     font-weight: 900;
     transform: translateY(-50%);
 }
