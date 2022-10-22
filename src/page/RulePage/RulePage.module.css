@@ -28,16 +28,19 @@
 .messages {
     line-height: 3em;
     font-size: 170%;
+    font-weight: 200;
     display: flex;
     justify-content: center;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .title {
+    font-size: 290%;
     display: flex;
     justify-content: center;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    line-height: 3em;
+
+    line-height: 2em;
+    font-weight: 200;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .explains {

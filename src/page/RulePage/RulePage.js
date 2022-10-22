@@ -15,7 +15,7 @@ export default function RulePage() {
                 className={styles.backarrow}
             />
 
-            <h1 className={styles.title}>⚠️ゲーム中の注意⚠️</h1>
+            <h1 className={styles.title}>⚠️CAUTION⚠️</h1>
 
             <ul className={styles.explains}>
                 <li className={styles.explain1}>
