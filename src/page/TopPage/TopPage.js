@@ -81,7 +81,7 @@ function LogInButton() {
 
 function MyPageButton() {
     return (
-        <Link className={styles["my-page-btn"]} to={"/home/"}>
+        <Link className={styles["my-page-btn"]} to={"/mypage/"}>
             My Page
         </Link>
     );
