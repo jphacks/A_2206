@@ -28,21 +28,21 @@ export default function StagePage() {
                 <h1 className={styles.title}>STAGE SELECTION</h1>
                 <br />
                 <div className={styles.buttons1}>
-                    <StageButton className={styles.topleft} text={"morning"} />
-                    <StageButton className={styles.topcenter} text={"noon"} />
-                    <StageButton className={styles.topright} text={"night"} />
+                    <StageButton className={styles.topleft} text={"MORNING"} />
+                    <StageButton className={styles.topcenter} text={"NOON"} />
+                    <StageButton className={styles.topright} text={"NIGHT"} />
                 </div>
 
                 <div className={styles.buttons2}>
                     <StageButton
                         className={styles.bottomleft}
-                        text={"fat burning"}
+                        text={"FAT BURNING"}
                     />
                     <StageButton
                         className={styles.bottomcenter}
-                        text={"rerax"}
+                        text={"RELAX"}
                     />
-                    <StageButton className={styles.bottomright} text={"fun"} />
+                    <StageButton className={styles.bottomright} text={"FUN"} />
                 </div>
             </div>
         </>
